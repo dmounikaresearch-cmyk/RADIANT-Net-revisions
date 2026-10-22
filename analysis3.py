@@ -4,7 +4,7 @@ baseline parameter counts, and figures."""
 import sys, json, math
 from pathlib import Path
 import numpy as np, pandas as pd
-ROOT = Path(__file__).resolve().parents[2]  # repository root
+ROOT = Path(__file__).resolve().parent  # repository root (all files in one folder)
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import run_revision_experiments as R
 import torch
@@ -13,8 +13,8 @@ from sklearn.metrics import confusion_matrix, precision_recall_fscore_support, r
 from sklearn.preprocessing import LabelEncoder
 
 OUT = ROOT / "analysis3"; OUT.mkdir(exist_ok=True)
-df = pd.read_csv(ROOT / "data" / "events_original_with_regions.csv", converters={"event_id": str, "region": str})
-_cl = pd.read_csv(ROOT / "data" / "events_clean_with_regions.csv", converters={"event_id": str})
+df = pd.read_csv(ROOT / "events_original_with_regions.csv", converters={"event_id": str, "region": str})
+_cl = pd.read_csv(ROOT / "events_clean_with_regions.csv", converters={"event_id": str})
 df = df.merge(_cl[["event_id"] + [c for c in _cl.columns if c not in df.columns]], on="event_id")
 F15 = "rainfall_mm temperature_c humidity_percent wind_speed_kmh atmospheric_pressure_hpa river_level_m soil_moisture_percent slope_degrees vegetation_dryness seismic_activity ground_displacement_mm satellite_water_index population_density road_accessibility historical_risk_score".split()
 LEAK = ["seismic_activity", "ground_displacement_mm", "wind_speed_kmh", "historical_risk_score"]

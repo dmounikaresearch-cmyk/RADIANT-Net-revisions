@@ -49,7 +49,7 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-DATA_DIR = HERE / "data" if (HERE / "data").exists() else HERE.parents[1] / "data"  # project folder or repository layout
+DATA_DIR = HERE / "data" if (HERE / "data" / "radiant_real_disaster_data.csv").exists() else HERE  # project folder or flat repository
 INPUT_CSV = DATA_DIR / "radiant_real_disaster_data.csv"
 OUTPUT_CSV = DATA_DIR / "radiant_clean_openmeteo_data.csv"
 LOG_FILE = DATA_DIR / "radiant_clean_openmeteo_data_log.txt"
