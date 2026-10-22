@@ -1,0 +1,38 @@
+Created: 2026-10-22 10:27
+Slope complete: True
+Input: radiant_real_disaster_data.csv  Events: 500
+Weather window: event date -2 to +1 days (daily means); antecedent precipitation: 30 days before event (sum)
+Daily vars: precipitation_sum, temperature_2m_mean, relative_humidity_2m_mean, wind_speed_10m_max, surface_pressure_mean, et0_fao_evapotranspiration; hourly: soil_moisture_0_to_7cm
+Slope: central differences on Open-Meteo elevation (Copernicus GLO-90), offset 0.0025 deg
+No noise added, no fallback constants, no class-dependent or catalogue-derived values.
+
+Missing values per feature:
+precip_mean_mm_day            0
+precip_antecedent_30d_mm      0
+temperature_mean_c            0
+rel_humidity_mean_pct         0
+wind_max_mean_kmh             0
+surface_pressure_mean_hpa     0
+et0_mean_mm_day               0
+soil_moisture_0_7cm_m3m3      0
+openmeteo_grid_elevation_m    0
+elevation_m                   0
+slope_deg                     0
+over_water                    0
+
+Summary:
+                            count     mean      std      min      25%      50%       75%       max
+precip_mean_mm_day          500.0    7.821   12.846    0.000    0.275    2.362    10.288    99.225
+precip_antecedent_30d_mm    500.0  115.994  138.257    0.000   22.875   62.800   172.600   911.600
+temperature_mean_c          500.0   17.906    9.704  -22.100   10.031   21.562    25.725    34.750
+rel_humidity_mean_pct       500.0   71.528   18.511    8.500   60.250   77.750    85.750    99.250
+wind_max_mean_kmh           500.0   21.298    9.882    4.600   14.094   19.250    25.819    52.325
+surface_pressure_mean_hpa   500.0  958.676   82.569  523.500  938.631  998.062  1011.025  1027.475
+et0_mean_mm_day             500.0    3.547    1.553    0.032    2.462    3.496     4.539     9.115
+soil_moisture_0_7cm_m3m3    500.0    0.228    0.193    0.000    0.000    0.247     0.399     0.713
+openmeteo_grid_elevation_m  500.0  517.892  826.227    0.000    0.000  128.000   635.000  5596.000
+elevation_m                 500.0  517.892  826.227    0.000    0.000  128.000   635.000  5596.000
+slope_deg                   500.0    4.615    7.935    0.000    0.000    0.883     5.375    46.529
+over_water                  500.0    0.316    0.465    0.000    0.000    0.000     1.000     1.000
+
+Failures (0):

@@ -1,0 +1,18 @@
+{
+ "meteorological": [
+  "rainfall",
+  "temperature",
+  "humidity",
+  "wind_speed",
+  "atmospheric_pressure",
+  "soil_moisture"
+ ],
+ "satellite": [
+  "satellite_water_index"
+ ],
+ "proxies": [
+  "seismic_activity",
+  "ground_displacement",
+  "historical_risk"
+ ]
+}

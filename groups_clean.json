@@ -1,0 +1,12 @@
+{
+ "modality": {
+  "Weather": ["precip", "temperature", "humidity", "wind", "pressure", "et0"],
+  "Soil moisture": ["soil_moist"],
+  "Terrain": ["elevation", "slope"]
+ },
+ "subsets": {
+  "Weather features": ["precip", "temperature", "humidity", "wind", "pressure", "et0"],
+  "Terrain features": ["elevation", "slope"],
+  "Soil moisture": ["soil_moist"]
+ }
+}
