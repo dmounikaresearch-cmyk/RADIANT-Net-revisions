@@ -1,0 +1,39 @@
+{
+  "title": "RADIANT-Net revisited: code and data for a leakage-aware evaluation of multimodal deep learning for natural hazard type classification",
+  "upload_type": "software",
+  "description": "<p>Code, data and supplementary material accompanying the manuscript <em>RADIANT-Net revisited: a leakage-aware evaluation of multimodal deep learning for natural hazard type classification from environmental and catalogue data</em> (submitted to Environmental Sciences Europe).</p><p>The repository contains: (1) the 500-event dataset (100 each of flood, cyclone, landslide, wildfire and earthquake) drawn from the GDACS, USGS ComCat and NOAA Storm Events catalogues; (2) the original data-assembly script and the feature-extraction script that re-derives 10 environmental features per event from ERA5 reanalysis (Open-Meteo historical archive) and the Copernicus GLO-90 elevation model; (3) the experiment script implementing RADIANT-Net v1, tuned tabular baselines and four leakage-aware evaluation protocols (repeated stratified splits, event-grouped CV, leave-region-out CV, temporal holdout), with statistical tests, stress tests and feature analyses; and (4) the analysis script that reproduces the tables and figures, plus Supplementary Tables S1-S2 and Figures S1-S2.</p>",
+  "creators": [
+    {
+      "name": "Mounika, Dannuri",
+      "affiliation": "School of Computer Science and Artificial Intelligence, SR University, Warangal, India; CSE-AIML, TKR College of Engineering and Technology, Hyderabad, India",
+      "orcid": "0009-0003-5478-2458"
+    },
+    {
+      "name": "Kolluri, Johnson",
+      "affiliation": "School of Computer Science and Artificial Intelligence, SR University, Warangal, India"
+    },
+    {
+      "name": "Srinivas, Sunil",
+      "affiliation": "CSE-AIML, TKR College of Engineering and Technology, Hyderabad, India"
+    },
+    {
+      "name": "Siripuri, Kiran",
+      "affiliation": "Symbiosis Institute of Technology, Hyderabad Campus, Symbiosis International (Deemed University), India"
+    }
+  ],
+  "keywords": [
+    "natural hazard classification",
+    "multimodal data fusion",
+    "data leakage",
+    "spatial cross-validation",
+    "environmental reanalysis",
+    "ERA5",
+    "deep learning",
+    "explainable AI",
+    "disaster risk reduction"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "version": "v1.0.0"
+}
