@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "RADIANT-Net revisited: code and data for a leakage-aware evaluation of multimodal deep learning for natural hazard type classification"
+type: software
+version: v1.0.0
+date-released: 2026-11-19
+license: MIT
+repository-code: "https://github.com/dmounikaresearch-cmyk/RADIANT-Net-revisions"
+authors:
+  - family-names: Mounika
+    given-names: Dannuri
+    orcid: "https://orcid.org/0009-0003-5478-2458"
+    affiliation: "SR University, Warangal; TKR College of Engineering and Technology, Hyderabad"
+  - family-names: Kolluri
+    given-names: Johnson
+    affiliation: "SR University, Warangal"
+  - family-names: Srinivas
+    given-names: Sunil
+    affiliation: "TKR College of Engineering and Technology, Hyderabad"
+  - family-names: Siripuri
+    given-names: Kiran
+    affiliation: "Symbiosis Institute of Technology, Hyderabad Campus, Symbiosis International (Deemed University)"
+keywords:
+  - natural hazard classification
+  - multimodal data fusion
+  - data leakage
+  - spatial cross-validation
+  - ERA5
+  - deep learning
+# After Zenodo mints the DOI, add:
+# doi: 10.5281/zenodo.XXXXXXX
